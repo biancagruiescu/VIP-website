@@ -1,0 +1,341 @@
+.home-page {
+  padding-bottom: 80px;
+  font-family: Montserrat, system-ui, sans-serif;
+}
+ 
+.left-right-side{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+/* STRATEGIC DIV---          -- LEFT SIDE OF HOME PAGE*/
+.strategic-div{
+  display: flex;
+  flex:1;
+  display: inline-block;
+  max-width: 900px;
+  margin-right: 40px;
+}
+.title-1{
+    font-size: 70px;
+    line-height: 1.2;
+    margin: 0;
+    color: #f0f4fa;
+    font-weight: bold;
+    line-height: 1;
+    transform: scaleY(0.9);
+}
+.title-2{
+    font-size: 70px;
+    line-height: 1.2;
+    margin: 0;
+    color:#2563eb;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1;
+    transform: scaleY(0.9);
+}
+ 
+.description{
+    margin-top: 20px;
+    font-size: 18px;
+    color: #cbcdd0;
+    line-height: 1.6;
+    font-weight: normal;
+}
+ 
+.button a {
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 15px 45px;
+    border-radius: 8px;
+    font-size: 20px;
+    display: inline-flex;
+    align-items:center;
+    transition: 0.3s ease;
+    transform: scaleY(0.9);
+    
+}
+
+.portfolio-button {
+    background-color: #2563eb;
+    color: #f0f4fa;
+}
+.portfolio-button:hover {
+    background-color: #1e40af;
+}  
+
+/**BOTTOM            DIV            CARDS*/
+
+.bottom-div {
+  display: flex;
+  column-gap: 15px;  
+  margin-top: 30px;
+  justify-content: left;  
+  align-items: center;  
+}
+.card-bottom {
+ background: linear-gradient(90deg, #1e2a47, #263b65);
+  height: 75px;  
+  width: 160px;  
+  border-radius: 12px;  
+  border: 2px solid #213463;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  padding: 10px;  
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-bottom:hover {
+  transform: translateY(-5px);  
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.card-bottom p {
+  color: #cbcdd0;
+  font-size: 15px;
+  margin-top: 5px;  
+  margin-bottom: 0;
+}
+.card-bottom h1 {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;  
+  margin: 0;  
+}
+.card-bottom h1 span {
+  color: #2f80ed;
+}
+ 
+/*RIGHT SIDE------- ANALYSIS GRIDDDDD*/
+
+.analysis-grid {
+  background-color: #1b294b;
+  padding: 50px 50px 70px 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 700px;
+  border-width: 1px;
+  border-radius: 20px;
+  border-color: #213463;
+  border-style: solid; 
+  transition: box-shadow 0.4s ease; 
+}
+.analysis-grid:hover {
+  box-shadow: 0 8px 24px rgba(62, 166, 255, 0.3), 0 0 0 2px #3ea6ff; 
+}
+.analysis-grid h1{
+  color: white;
+  font-family: Montserrat, system-ui, sans-serif;
+  font-size: 20px;
+}
+.analysis-grid p{
+  font-family: Montserrat, system-ui, sans-serif;
+  color: #f0f4fa; 
+  font-size: 13px;
+}
+
+.card {
+  background: linear-gradient(90deg, rgba(30, 42, 71, 0.7), rgba(38, 59, 101, 0.7));
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.icon {
+  align-self: flex-start;
+  margin-bottom: 10px;
+}
+
+.card svg{
+transform: scale(1.5);
+  margin-bottom: 13px;
+ align-self: flex-start;
+}
+
+.card h1{
+  margin: 0;
+  color: white;
+  text-align: left;
+
+}
+.card p {
+  margin: 0;
+  font-size: 15px;
+  color: #c3d5e9;
+  text-align: left;
+ 
+}
+
+.stat-percentage {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+
+.stat-growth {
+  color: #3fcf8e;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* PROGRESS                  BAR FROM              ANALISYS*/
+progress {
+  width: 100%;
+  height: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2b3a55; /* Subtle dark background */
+  appearance: none;
+  -webkit-appearance: none;
+  overflow: hidden;
+  display: block;
+}
+
+/* WebKit (Chrome, Edge, Safari) */
+progress::-webkit-progress-bar {
+  background-color: #2b3a55; /* Matches the container background */
+  border-radius: 4px;
+}
+
+progress::-webkit-progress-value {
+  background: linear-gradient(90deg, #0d6efd, #1e90ff);
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+/* Firefox */
+progress::-moz-progress-bar {
+  background: linear-gradient(90deg, #0d6efd, #1e90ff);
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+
+/*RESPONSIVE DESIGN*/
+
+/* Tablet view (up to 1024px) */
+@media (max-width: 1024px) {
+  .left-right-side {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .strategic-div {
+    max-width: 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .title-1,
+  .title-2 {
+    font-size: 48px;
+  }
+
+  .description {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  .button a {
+    font-size: 18px;
+    padding: 12px 30px;
+  }
+
+  .analysis-grid {
+    padding: 40px 30px;
+    max-width: 90%;
+  }
+
+  .bottom-div {
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+
+  .card-bottom {
+    width: 140px;
+    height: 70px;
+  }
+}
+
+/* Phone view (up to 768px) */
+@media (max-width: 768px) {
+  .title-1,
+  .title-2 {
+    font-size: 38px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .button a {
+    font-size: 16px;
+    padding: 10px 25px;
+  }
+
+  .analysis-grid {
+    padding: 30px 20px;
+    gap: 16px;
+  }
+
+  .card h1 {
+    font-size: 18px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+
+  .stat-percentage {
+    font-size: 28px;
+  }
+
+  .stat-growth {
+    font-size: 14px;
+  }
+
+  .card-bottom {
+    width: 120px;
+    height: 65px;
+  }
+
+  .card-bottom h1 {
+    font-size: 20px;
+  }
+
+  .card-bottom p {
+    font-size: 13px;
+  }
+
+  .home-page {
+    padding-bottom: 50px;
+  }
+}
+
+/*PT ANIMATIE */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+}
+
+.scroll-reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.scroll-reveal:nth-child(1) { transition-delay: 0.1s; }
+.scroll-reveal:nth-child(2) { transition-delay: 0.2s; }
+.scroll-reveal:nth-child(3) { transition-delay: 0.3s; }
+

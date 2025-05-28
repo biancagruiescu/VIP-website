@@ -1,0 +1,39 @@
+html {
+  scroll-behavior: smooth;
+     font-family: Montserrat, system-ui, sans-serif;
+}  
+body {
+  margin: 0;
+  background-color: #0f172a;
+}
+.main{
+  padding: 100px;
+  background-color: #0f172a;
+  padding-top: 110px;
+}
+
+.custom-alert {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #0D6EFD;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  z-index: 9999;
+  display: none;
+  max-width: 300px;
+}
+
+.custom-alert button {
+  background: white;
+  color: #0D6EFD;
+  border: none;
+  padding: 6px 12px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
